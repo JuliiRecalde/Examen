@@ -11,8 +11,10 @@ import {DrinkInterface} from "../../Interface/Drink";
 })
 export class DrinkComponent implements OnInit {
 
-  //drink: DrinkInterface[] = [];
+  drinks: DrinkInterface[] = [];
   @Input() drink:DrinkInterface;
+
+
 
   constructor(private _http: Http) {
     //Inicia la clase
@@ -34,10 +36,9 @@ export class DrinkComponent implements OnInit {
           console.log(respuesta.next);
           this.drink = respuesta;
 
-          /*
-           this.drink = this.drink.map(
+          /* this.drinks = this.drinks.map(
            (drink) => {
-           drink.imagenURL = "/assets/imagenes" + drink.name + '.jpg';
+           drink.imagenURL = "/assets/Imagenes" + drink.name + '.jpg';
            return drink;
            }
            )*/
