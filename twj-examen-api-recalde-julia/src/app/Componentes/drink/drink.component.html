@@ -38,22 +38,23 @@
   </div>
 
 
-
   <div class="row-col-sm-12">
     <div style="width: auto; margin-left: 200px; margin-right: 200px;
           margin-bottom: 50px; margin-top: 50px; border-style: solid ; background-color: #f3f5f7"
          class="col-sm-12" *ngFor="let bebida of drink; let indice=index">
-      <img src="http://www.gifmania.com/Gif-Animados-Alimentos/Imagenes-Bebidas/Cerveza/Vasos-De-Cerveza/Vaso-De-Cerveza-62700.gif" alt="">
+      <img
+        src="http://www.gifmania.com/Gif-Animados-Alimentos/Imagenes-Bebidas/Cerveza/Vasos-De-Cerveza/Vaso-De-Cerveza-62700.gif"
+        alt="">
       <br><br>
-        <h3>{{bebida.id}}- {{bebida.name}}
-
-        </h3>
-        <p align="left">
-          <h4>Lema:&nbsp;&nbsp;</h4> {{bebida.tagline}}<br>
-          <b>Fecha de elaboracion:&nbsp;&nbsp;</b> {{bebida.first_brewed}}<br>
-          <b>Descripcion:&nbsp;&nbsp;</b> {{bebida.description}}<br>
-          <br><br>
-        </p>
+      <h3>{{bebida.id}}- {{bebida.name}}
+      </h3>
+      <br>
+      <h4 align="left">Lema:&nbsp;&nbsp; {{bebida.tagline}}</h4><br><br>
+      <p align="left">
+        <b>Fecha de elaboracion:&nbsp;&nbsp;</b> {{bebida.first_brewed}}<br>
+        <b>Descripcion:&nbsp;&nbsp;</b> {{bebida.description}}<br>
+        <br><br>
+      </p>
 
     </div>
 

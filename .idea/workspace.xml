@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1952ed5-597e-4485-9244-2825d925044b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twj-examen-api-recalde-julia/src/app/Componentes/drink/drink.component.html" afterPath="$PROJECT_DIR$/twj-examen-api-recalde-julia/src/app/Componentes/drink/drink.component.html" />
-    </list>
+    <list default="true" id="b1952ed5-597e-4485-9244-2825d925044b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="drink.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twj-examen-api-recalde-julia/src/app/Componentes/drink/drink.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+            <state relative-caret-position="233">
+              <caret line="51" column="72" lean-forward="false" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -491,12 +489,12 @@
       <workItem from="1497571085178" duration="2915000" />
       <workItem from="1497584429367" duration="313000" />
       <workItem from="1497586404484" duration="10900000" />
-      <workItem from="1497643176043" duration="6129000" />
+      <workItem from="1497643176043" duration="6503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20257000" />
+    <option name="totallyTimeSpent" value="20631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -845,8 +843,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twj-examen-api-recalde-julia/src/app/Componentes/drink/drink.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="51" column="13" lean-forward="false" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        <state relative-caret-position="233">
+          <caret line="51" column="72" lean-forward="false" selection-start-line="51" selection-start-column="72" selection-end-line="51" selection-end-column="72" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
