@@ -1,35 +1,51 @@
 <div
-  style=" padding: 0px; margin: 0px; width: 100%;"
+  style=" height: 100%; width: 100%;
+  background-image: url(https://previews.123rf.com/images/hypnocreative/hypnocreative1212/hypnocreative121200167/16946288-Una-bella-composici-n-de-los-vidrios-de-bebidas-alcoh-licas-en-fondo-de-papel-viejo-Foto-de-archivo.jpg)"
   align="center"
   class="container">
-  <h1>Bienvenidos</h1>
-  <h2>Bebidas</h2>
+  <br><br>
+  <div style="background-color: darkslategrey; color: white; text-decoration-line: underline" align="left" class="row-col-md-12">
+    <br>
+    <h1 align="center">Bienvenidos</h1>
+    <h2>Menu de bebidas</h2>
+    <br>
+  </div>
 
+  <br><br><br>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <img style="height: 220px; width: 300px" src="https://media.giphy.com/media/Dzh4BDQg2MarK/giphy.gif" alt="">
+    </div>
+
+    <div class="col-sm-4">
+      <img style="height: 220px; width: 300px" src="http://37.media.tumblr.com/095d69019eb9defa2489d0a899a1d9d2/tumblr_mn06wqQZNe1sr90fco1_500.gif" alt="">
+    </div>
+
+    <div class="col-sm-4">
+      <img style="height: 220px; width: 300px" src="https://googifs.es/gif/2016/12/celebrando-el-ano-nuevo.gif" alt="">
+    </div>
+  </div>
+  <br><br><br>
 
   <div align="center" class="row-col-md-12">
-    <button class="btn btn-outline-success" (click)="cargarBebidas()">Cargar bebidas</button>
+    <button style="width: 200px; height: 60px; font-size: 24px" class="btn btn-primary" (click)="cargarBebidas()">Cargar bebidas</button>
     <br><br><br>
   </div>
 
 
-  <div style="padding: 0px;margin: 0px" class="row">
-    <div *ngFor="let bebida of drink; let indice=index">
-      <div align="center" class="col-sm-4">
-        <div class="card" style="width: 20rem; height: 20rem">
-          <div style=" border-style: double; border-color: red"
-               class="card-block">
-            <h4 class="card-title">{{bebida.id}}- {{bebida.name}}
-            </h4>
-            <p align="left" class="card-text">
-              <b>Lema:&nbsp;&nbsp;</b> {{bebida.tagline}}<br>
-              <b>Fecha de elaboracion:&nbsp;&nbsp;</b> {{bebida.first_brewed}}<br>
-              <b>Descripcion:&nbsp;&nbsp;</b> {{bebida.description}}<br>
-
-            </p>
-          </div>
-        </div>
-      </div>
+  <div  class="row">
+    <div  class="col-sm-12" *ngFor="let bebida of drink; let indice=index">
+      <h3>{{bebida.id}}- {{bebida.name}}
+      </h3>
+      <p style="background-color: #e7ecef " align="left">
+        <b>Lema:&nbsp;&nbsp;</b> {{bebida.tagline}}<br>
+        <b>Fecha de elaboracion:&nbsp;&nbsp;</b> {{bebida.first_brewed}}<br>
+        <b>Descripcion:&nbsp;&nbsp;</b> {{bebida.description}}<br>
+        <br><br>
+      </p>
     </div>
+
 
   </div>
   <br><br><br><br>
