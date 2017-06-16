@@ -1,0 +1,57 @@
+<div class="container">
+  <h1>Bienvenidos</h1>
+  <h2>Usuarios</h2>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="from-group">
+        <!--
+          <pre>
+            {{nuevoEntrenador | json}}
+          </pre>
+        -->
+        <label class="col-from-label">Nombre:  </label>
+        <input class="from-control"
+               placeholder="Ingrese el nombre"
+               [(ngModel)]="nuevoEntrenador.nombre" type="text">
+
+      </div>
+      <div class="from-group">
+
+        <label class="col-from-label">Region:  </label>
+        <input class="from-control"
+               placeholder="Ingrese la region"
+               [(ngModel)]="nuevoEntrenador.region" type="text">
+      </div>
+      <div class="from-group">
+
+        <label class="col-from-label">Fecha de inicio: </label>
+        <input class="from-control"
+               placeholder="Ingrese la fecha de inicio"
+               [(ngModel)]="nuevoEntrenador.fechaInicioMaestro" type="text">
+      </div>
+      <button class="btn btn-success" (click)="guardarEntrenador()">Guardar entrenador</button>
+    </div>
+  </div>
+
+  <br><br>
+
+  <h3>Entrenadores:</h3>
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let entrenador of entrenadores;let indice = index;">
+      <h4>{{entrenador.nombre}}</h4>
+      <h6>Region: {{entrenador.region}}</h6>
+      <h6>Fecha de inicio: {{entrenador.fechaInicioMaestro}}</h6>
+      <button class="btn btn-danger" (click)="eliminarUsuario(entrenador,indice)"> Eliminar usuario</button>
+    </div>
+  </div>
+
+  <p>{{entrenadores.id}}</p>
+  <p>{{entrenadores.nombre}}</p>
+  <p>{{entrenadores.region}}</p>
+  <p>FMP {{entrenadores.fechaInicioMaestroPokemon}}</p>
+  <p>FU {{entrenadores.updatedAt}}</p>
+  <p>FC {{entrenadores.createdAt}}</p>
+
+</div>

@@ -2,11 +2,11 @@
  * Created by july on 15/06/2017.
  */
 
-export interface Pokemon {
+export interface PokemonInterface {
   id?: number,
   nombre?: string,
   region?: string,
-  fechaInicioMaestroPokemon?: Date,
+  fechaInicioMaestro?: Date,
   createdAt?: Date,
   updatedAt?: Date
 }
