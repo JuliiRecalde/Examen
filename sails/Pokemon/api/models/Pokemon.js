@@ -14,7 +14,7 @@ module.exports = {
     region:{
       type:"string"
     },
-    fecha_nacimiento:{
+    fechaInicioMAestro:{
       type:"Date"
     }
   }
