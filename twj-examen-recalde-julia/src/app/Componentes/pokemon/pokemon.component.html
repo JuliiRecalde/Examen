@@ -1,57 +1,92 @@
-<div class="container">
-  <h1>Bienvenidos</h1>
-  <h2>Usuarios</h2>
+<div
+  style="background-size: cover; background-color: #f3f5f7; height: 100px; width: 100%;  " align="center"
+  class="container">
+  <br><br>
+  <div style="background-color: #843534; color: white" align="center"
+       class="row-col-md-12">
+    <h1>ENTRENADORES POKEMON
+      <img style="width: 5%"
+           src="http://vignette2.wikia.nocookie.net/pokemon/images/e/e1/025Pikachu_OS_anime_4.png/revision/latest?cb=20150101100259"
+           alt="pikachu">
+    </h1>
+  </div>
+  <br><br>
 
   <div class="row">
-    <div class="col-sm-6">
-      <div class="from-group">
-        <!--
-          <pre>
-            {{nuevoEntrenador | json}}
-          </pre>
-        -->
-        <label class="col-from-label">Nombre:  </label>
+    <div class="col-sm-4">
+      <img style="width: 40%; margin-top: 70px" src="http://imagenpng.com/wp-content/uploads/2017/02/007Squirtle_Pokem.png" alt="">
+    </div>
+    <div style="border-style: double;border-color: #d0d5d8;width:20%;" class="col-sm-4">
+      <br>
+      <h4>Datos de entrenador</h4>
+      <br>
+      <div style="width: auto" class="from-group">
         <input class="from-control"
                placeholder="Ingrese el nombre"
                [(ngModel)]="nuevoEntrenador.nombre" type="text">
-
       </div>
+      <br>
       <div class="from-group">
 
-        <label class="col-from-label">Region:  </label>
         <input class="from-control"
                placeholder="Ingrese la region"
                [(ngModel)]="nuevoEntrenador.region" type="text">
       </div>
+      <br>
       <div class="from-group">
 
-        <label class="col-from-label">Fecha de inicio: </label>
         <input class="from-control"
                placeholder="Ingrese la fecha de inicio"
                [(ngModel)]="nuevoEntrenador.fechaInicioMaestro" type="text">
       </div>
-      <button class="btn btn-success" (click)="guardarEntrenador()">Guardar entrenador</button>
+      <br>
     </div>
+    <div class="col-sm-4">
+      <img style="margin-top: 50px; width: 60%" src="http://in3dvn.com/wp-content/uploads/2016/05/in-3d-chuyen-dong-in-hinh-chuyen-dong-15.gif" alt="">
+    </div>
+  </div>
+
+
+  <br><br>
+
+  <div class="row-col-md-12">
+    <button class="btn btn-warning" (click)="guardarEntrenador()">Guardar entrenador</button>
   </div>
 
   <br><br>
 
-  <h3>Entrenadores:</h3>
+  <h3 style="margin-left: 5%" align="left">Entrenadores:</h3>
+  <br><br>
 
-  <div class="row">
-    <div class="col-md-4" *ngFor="let entrenador of entrenadores;let indice = index;">
-      <h4>{{entrenador.nombre}}</h4>
-      <h6>Region: {{entrenador.region}}</h6>
-      <h6>Fecha de inicio: {{entrenador.fechaInicioMaestro}}</h6>
-      <button class="btn btn-danger" (click)="eliminarUsuario(entrenador,indice)"> Eliminar usuario</button>
+
+  <div class="row-col-sm-12">
+    <div style="width: auto; margin-left: 200px; margin-right: 200px;
+          margin-bottom: 50px; margin-top: 50px; border-style: solid ;border-color: #0c8da0;"
+         class="col-md-4" *ngFor="let entrenador of entrenadores;let indice = index;">
+
+      <div style="background-color: #d0d5d8" class="row">
+
+        <div class="col-md-10">
+          <h4>{{entrenador.nombre}}
+
+          </h4>
+        </div>
+
+        <div class="col-md-2">
+          <img style="width: 100%" src="http://4.bp.blogspot.com/-tCGc_rfw0iU/V1TwlOV1L3I/AAAAAAAAAxc/COJaEe4vDs04aFfi-A96rAkQM8LlNAjuACK4B/s1600/pikachu.gif" alt="">
+        </div>
+
+      </div>
+      <br>
+      <h6 align="left">Region: {{entrenador.region}}</h6>
+      <h6 align="left">Fecha de inicio: {{entrenador.fechaInicioMaestro}}</h6>
+      <h6 align="left">{{entrenador.createdAt}}</h6>
+      <h6 align="left">{{entrenador.updatedAt}}</h6>
+      <button class="btn btn-danger" (click)="eliminarEntrenador(entrenador,indice)"> Eliminar entrenador</button>
+      <br><br>
     </div>
-  </div>
 
-  <p>{{entrenadores.id}}</p>
-  <p>{{entrenadores.nombre}}</p>
-  <p>{{entrenadores.region}}</p>
-  <p>FMP {{entrenadores.fechaInicioMaestroPokemon}}</p>
-  <p>FU {{entrenadores.updatedAt}}</p>
-  <p>FC {{entrenadores.createdAt}}</p>
+  </div>
+  <br><br><br><br>
 
 </div>

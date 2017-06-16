@@ -59,4 +59,28 @@ export class PokemonComponent implements OnInit {
 
   }
 
+  eliminarEntrenador(entrenador: PokemonClass, indice: number) {
+
+    console.log("Indice:", this.entrenadores.indexOf(entrenador));
+    console.log("Indice con index: ", indice);
+    console.log("Usuarios : ", this.entrenadores);
+    console.log("Usuariofff : ", entrenador.id);
+
+
+    this._http.delete("http://localhost:1337/Pokemon?id=" + entrenador.id)
+      .subscribe(respuesta => {
+          this.entrenadores.splice(indice, 1);
+          let respuestaJson = respuesta.json();
+          console.log('respuestaJsonoooooo: ', respuestaJson);
+        },
+        error => {
+          console.log("Error ", error)
+        }
+      )
+
+  }
+
+
+
+
 }
