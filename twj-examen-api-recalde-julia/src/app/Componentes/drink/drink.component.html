@@ -1,3 +1,38 @@
-<p>
-  drink works!
-</p>
+<div
+  style=" padding: 0px; margin: 0px; width: 100%;"
+  align="center"
+  class="container">
+  <h1>Bienvenidos</h1>
+  <h2>Bebidas</h2>
+
+
+  <div align="center" class="row-col-md-12">
+    <button class="btn btn-outline-success" (click)="cargarBebidas()">Cargar bebidas</button>
+    <br><br><br>
+  </div>
+
+
+  <div style="padding: 0px;margin: 0px" class="row">
+    <div *ngFor="let bebida of drink; let indice=index">
+      <div align="center" class="col-sm-4">
+        <div class="card" style="width: 20rem; height: 20rem">
+          <div style=" border-style: double; border-color: red"
+               class="card-block">
+            <h4 class="card-title">{{bebida.id}}- {{bebida.name}}
+            </h4>
+            <p align="left" class="card-text">
+              <b>Lema:&nbsp;&nbsp;</b> {{bebida.tagline}}<br>
+              <b>Fecha de elaboracion:&nbsp;&nbsp;</b> {{bebida.first_brewed}}<br>
+              <b>Descripcion:&nbsp;&nbsp;</b> {{bebida.description}}<br>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br><br><br><br>
+
+
+</div>
